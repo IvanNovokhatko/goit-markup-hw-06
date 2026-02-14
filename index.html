@@ -32,10 +32,10 @@
               <a href="./index.html" class="nav-link">Studio</a>
             </li>
             <li class="nav-list-item">
-              <a href="" class="nav-link">Portfolio</a>
+              <a href="#portfolio" class="nav-link">Portfolio</a>
             </li>
             <li class="nav-list-item">
-              <a href="" class="nav-link">Contacts</a>
+              <a href="#" class="nav-link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -53,6 +53,12 @@
             </li>
           </ul>
         </address>
+
+        <button type="button" class="burger-menu-button">
+          <svg width="16.8" height="14.4">
+            <use href="./images/icons.svg#icon-group"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- #endregion Header -->
@@ -60,7 +66,7 @@
     <main>
       <!-- #region Hero -->
       <section class="hero">
-        <div class="container hero-container">
+        <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button">Order Service</button>
         </div>
@@ -73,7 +79,7 @@
           <h2 class="features-title visually-hidden">Our Features</h2>
           <ul class="features-list">
             <li class="features-list-item">
-              <svg class="icon" width="64" height="64">
+              <svg class="features-icon" width="64" height="64">
                 <use href="./images/icons.svg#icon-antenna"></use>
               </svg>
               <h3 class="features-list-title">Strategy</h3>
@@ -83,7 +89,7 @@
               </p>
             </li>
             <li class="features-list-item">
-              <svg class="icon" width="64" height="64">
+              <svg class="features-icon" width="64" height="64">
                 <use href="./images/icons.svg#icon-clock"></use>
               </svg>
               <h3 class="features-list-title">Punctuality</h3>
@@ -93,7 +99,7 @@
               </p>
             </li>
             <li class="features-list-item">
-              <svg class="icon" width="64" height="64">
+              <svg class="features-icon" width="64" height="64">
                 <use href="./images/icons.svg#icon-diagram"></use>
               </svg>
               <h3 class="features-list-title">Diligence</h3>
@@ -103,7 +109,7 @@
               </p>
             </li>
             <li class="features-list-item">
-              <svg class="icon" width="64" height="64">
+              <svg class="features-icon" width="64" height="64">
                 <use href="./images/icons.svg#icon-astronaut"></use>
               </svg>
               <h3 class="features-list-title">Technologies</h3>
@@ -125,6 +131,10 @@
             <li class="team-list-item">
               <img
                 src="./images/mark-guerrero.jpg"
+                srcset="
+                  ./images/mark-guerrero.jpg    1x,
+                  ./images/mark-guerrero@2x.jpg 2x
+                "
                 alt="Mark Guerrero"
                 width="264"
               />
@@ -164,7 +174,12 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img src="./images/tom-ford.jpg" alt="Tom Ford" width="264" />
+              <img
+                src="./images/tom-ford.jpg"
+                srcset="./images/tom-ford.jpg 1x, ./images/tom-ford@2x.jpg 2x"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="team-list-item-content">
                 <h3 class="team-list-title">Tom Ford</h3>
                 <p class="team-list-content">Frontend Developer</p>
@@ -203,6 +218,10 @@
             <li class="team-list-item">
               <img
                 src="./images/camila-garcia.jpg"
+                srcset="
+                  ./images/camila-garcia.jpg    1x,
+                  ./images/camila-garcia@2x.jpg 2x
+                "
                 alt="Camila Garcia"
                 width="264"
               />
@@ -244,6 +263,10 @@
             <li class="team-list-item">
               <img
                 src="./images/daniel-wilson.jpg"
+                srcset="
+                  ./images/daniel-wilson.jpg    1x,
+                  ./images/daniel-wilson@2x.jpg 2x
+                "
                 alt="Daniel Wilson"
                 width="264"
               />
@@ -288,7 +311,7 @@
       <!-- #endregion Team -->
 
       <!-- #region Portfolio -->
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -296,8 +319,12 @@
               <div class="portfolio-overlay-container">
                 <img
                   src="./images/banking-app.jpg"
+                  srcset="
+                    ./images/banking-app.jpg    1x,
+                    ./images/banking-app@2x.jpg 2x
+                  "
                   alt="Banking App"
-                  width="360"
+                  width="1100%"
                 />
                 <div class="portfolio-overlay">
                   <p class="portfolio-overlay-content">
@@ -316,8 +343,12 @@
               <div class="portfolio-overlay-container">
                 <img
                   src="./images/cashless-payment.jpg"
+                  srcset="
+                    ./images/cashless-payment.jpg    1x,
+                    ./images/cashless-payment@2x.jpg 2x
+                  "
                   alt="Cashless Payment"
-                  width="360"
+                  width="100%"
                 />
                 <div class="portfolio-overlay">
                   <p class="portfolio-overlay-content">
@@ -336,8 +367,12 @@
               <div class="portfolio-overlay-container">
                 <img
                   src="./images/meditation-app.jpg"
+                  srcset="
+                    ./images/meditation-app.jpg    1x,
+                    ./images/meditation-app@2x.jpg 2x
+                  "
                   alt="Meditation App"
-                  width="360"
+                  width="100%"
                 />
                 <div class="portfolio-overlay">
                   <p class="portfolio-overlay-content">
@@ -356,8 +391,12 @@
               <div class="portfolio-overlay-container">
                 <img
                   src="./images/taxi-service.jpg"
+                  srcset="
+                    ./images/taxi-service.jpg    1x,
+                    ./images/taxi-service@2x.jpg 2x
+                  "
                   alt="Taxi Service"
-                  width="360"
+                  width="100%"
                 />
                 <div class="portfolio-overlay">
                   <p class="portfolio-overlay-content">
@@ -376,8 +415,12 @@
               <div class="portfolio-overlay-container">
                 <img
                   src="./images/screen-illustrations.jpg"
+                  srcset="
+                    ./images/screen-illustrations.jpg    1x,
+                    ./images/screen-illustrations@2x.jpg 2x
+                  "
                   alt="Screen Illustrations"
-                  width="360"
+                  width="100%"
                 />
                 <div class="portfolio-overlay">
                   <p class="portfolio-overlay-content">
@@ -396,8 +439,12 @@
               <div class="portfolio-overlay-container">
                 <img
                   src="./images/online-courses.jpg"
+                  srcset="
+                    ./images/online-courses.jpg    1x,
+                    ./images/online-courses@2x.jpg 2x
+                  "
                   alt="Online Courses"
-                  width="360"
+                  width="100%"
                 />
                 <div class="portfolio-overlay">
                   <p class="portfolio-overlay-content">
@@ -420,7 +467,7 @@
 
     <!-- #region Foorer -->
     <footer class="page-footer">
-      <div class="container page-footer-container">
+      <div class="container main-page-footer-container">
         <div class="page-footer-container">
           <div>
             <a href="./index.html" class="page-footer-logo"
@@ -504,12 +551,108 @@
     </footer>
     <!-- #endregion Footer -->
 
+    <!-- #region Burger-menu-backdrop -->
+    <div class="burger-menu-backdrop">
+      <div class="container">
+        <button type="button" class="backdrop-close-button">
+          <svg class="backdrop-close-button-content" width="8" height="8">
+            <use href="./images/icons.svg#icon-button-close"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="burger-menu-nav-list">
+            <li class="burger-menu-nav-list-item">
+              <a
+                class="burger-menu-nav-list-link nav-active"
+                href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="burger-menu-nav-list-item">
+              <a class="burger-menu-nav-list-link" href="#portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="burger-menu-nav-list-item">
+              <a class="burger-menu-nav-list-link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="burger-menu-contacts-container">
+          <ul class="burger-menu-contacts-list">
+            <li class="burger-menu-contacts-list-item">
+              <a
+                href="tel:+110001111111"
+                class="burger-menu-contacts-list-link contacts-active"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="burger-menu-contacts-list-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="burger-menu-contacts-list-link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="burger-menu-social-media-list">
+            <li class="burger-menu-social-media-list-item">
+              <a
+                href="#"
+                class="burger-menu-social-media-list-link"
+                target="_blank"
+              >
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="burger-menu-social-media-list-item">
+              <a
+                href="#"
+                class="burger-menu-social-media-list-link"
+                target="_blank"
+              >
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="burger-menu-social-media-list-item">
+              <a
+                href="#"
+                class="burger-menu-social-media-list-link"
+                target="_blank"
+              >
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="burger-menu-social-media-list-item">
+              <a
+                href="#"
+                class="burger-menu-social-media-list-link"
+                target="_blank"
+              >
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion Burger-menu-backdrop -->
+
     <!-- #region Backdrop -->
     <div class="backdrop">
       <div class="modal">
-        <button type="button" class="feedback-form-close-button">
-          <svg class="feedback-form-close-button-content" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
+        <button type="button" class="backdrop-close-button">
+          <svg class="backdrop-close-button-content" width="8" height="8">
+            <use href="./images/icons.svg#icon-button-close"></use>
           </svg>
         </button>
         <form name="feedback-form" class="feedback-form">
@@ -517,9 +660,9 @@
             Leave your contacts and we will call you back
           </h2>
           <div class="feedback-form-field">
-            <div class="input-wrapper">
+            <div>
               <label class="feedback-form-label" for="input-name">Name</label>
-              <div class="feedback-form-input-wrapper">
+              <div class="input-wrapper">
                 <input
                   class="feedback-form-input"
                   name="input-name"
@@ -531,9 +674,9 @@
                 </svg>
               </div>
             </div>
-            <div class="input-wrapper">
+            <div>
               <label class="feedback-form-label" for="input-phone">Phone</label>
-              <div class="feedback-form-input-wrapper">
+              <div class="input-wrapper">
                 <input
                   class="feedback-form-input"
                   name="input-phone"
@@ -545,9 +688,9 @@
                 </svg>
               </div>
             </div>
-            <div class="input-wrapper">
+            <div>
               <label class="feedback-form-label" for="input-email">Email</label>
-              <div class="feedback-form-input-wrapper">
+              <div class="input-wrapper">
                 <input
                   class="feedback-form-input"
                   name="input-email"
