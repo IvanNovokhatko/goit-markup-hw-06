@@ -209,6 +209,12 @@ button {
     }
 }
 
+@media screen and (max-width: 767px) {
+    .contacts-container {
+        display: none;
+    }    
+}
+
 .contacts-list {
     display: none;
 }
